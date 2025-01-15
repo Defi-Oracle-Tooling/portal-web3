@@ -1,0 +1,10 @@
+.
+├── apps/
+│   ├── web/                 # Main dashboard application
+│   └── admin/              # Admin panel
+├── packages/
+│   ├── ui/                 # Shared UI components
+│   ├── core/               # Core business logic
+│   ├── config/             # Shared configuration
+│   └── types/              # Shared TypeScript types
+└── pnpm-workspace.yaml 
