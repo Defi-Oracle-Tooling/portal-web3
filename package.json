@@ -10,7 +10,11 @@
     "dev": "pnpm --filter @web3-dashboard/web dev",
     "build": "pnpm --filter @web3-dashboard/web build",
     "lint": "pnpm --filter @web3-dashboard/web lint",
-    "clean": "rm -rf node_modules **/node_modules"
+    "clean": "rm -rf node_modules **/node_modules",
+    "prepare": "husky install",
+    "security-audit": "pnpm audit",
+    "security-check": "pnpm audit && pnpm outdated",
+    "update-deps": "pnpm update -r --latest"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -25,7 +29,8 @@
     "@typescript-eslint/parser": "^7.3.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5"
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "husky": "^9.0.11"
   },
   "pnpm": {
     "overrides": {
