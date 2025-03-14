@@ -31,6 +31,31 @@ pnpm dev
 pnpm build
 ```
 
+## Security
+
+This project takes security seriously. We have implemented several measures to ensure code quality and security:
+
+- Automated security scanning with CodeQL
+- Weekly dependency updates via Dependabot
+- Pre-commit hooks for code quality
+- Regular security audits
+- Automated vulnerability scanning
+
+For more information about security, please see our [Security Policy](SECURITY.md).
+
+### Security Scripts
+
+```bash
+# Run security audit
+pnpm security-audit
+
+# Check for outdated dependencies
+pnpm security-check
+
+# Update dependencies to latest versions
+pnpm update-deps
+```
+
 ## Tech Stack
 
 - React 18
@@ -43,6 +68,18 @@ pnpm build
 ## Development
 
 This project uses pnpm workspaces to manage multiple packages. The main web application is located in `apps/web`.
+
+### Development Best Practices
+
+1. Keep dependencies up to date
+2. Follow security guidelines in SECURITY.md
+3. Run security checks before commits
+4. Review dependency changes carefully
+5. Use exact versions for dependencies
+
+## Contributing
+
+Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Security Policy](SECURITY.md) before making a contribution.
 
 ## License
 

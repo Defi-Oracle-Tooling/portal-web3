@@ -10,7 +10,11 @@
     "dev": "pnpm --filter @web3-dashboard/web dev",
     "build": "pnpm --filter @web3-dashboard/web build",
     "lint": "pnpm --filter @web3-dashboard/web lint",
-    "clean": "rm -rf node_modules **/node_modules"
+    "clean": "rm -rf node_modules **/node_modules",
+    "prepare": "husky install",
+    "security-audit": "pnpm audit",
+    "security-check": "pnpm audit && pnpm outdated",
+    "update-deps": "pnpm update -r --latest"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -43,3 +43,9 @@ pnpm-debug.log*
 # Turbo
 .turbo
 **/.turbo
+
+# Misc
+800_Terminal_Manual_rev.md
+INIT_PLANNING.md
+PROJ_REQ.md
+TECH_PLAN.md
