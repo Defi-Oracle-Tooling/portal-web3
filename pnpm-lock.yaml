@@ -30,29 +30,29 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@types/node':
-        specifier: ^22.14.1
-        version: 22.14.1
+        specifier: ^22.15.29
+        version: 22.15.29
       '@types/react':
         specifier: ^18.2.67
-        version: 18.3.18
+        version: 18.3.23
       '@types/react-dom':
         specifier: ^18.2.22
-        version: 18.3.5(@types/react@18.3.18)
+        version: 18.3.7(@types/react@18.3.23)
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.30.1
-        version: 8.30.1(@typescript-eslint/parser@8.30.1(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3)
+        version: 8.33.0(@typescript-eslint/parser@8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)
       '@typescript-eslint/parser':
         specifier: ^8.30.1
-        version: 8.30.1(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3)
+        version: 8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)
       eslint:
         specifier: ^9.25.0
-        version: 9.25.0(jiti@1.21.7)
+        version: 9.28.0(jiti@1.21.7)
       eslint-plugin-react-hooks:
         specifier: ^5.2.0
-        version: 5.2.0(eslint@9.25.0(jiti@1.21.7))
+        version: 5.2.0(eslint@9.28.0(jiti@1.21.7))
       eslint-plugin-react-refresh:
         specifier: ^0.4.19
-        version: 0.4.19(eslint@9.25.0(jiti@1.21.7))
+        version: 0.4.20(eslint@9.28.0(jiti@1.21.7))
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -61,13 +61,13 @@ importers:
     dependencies:
       '@headlessui/react':
         specifier: ^2.2.2
-        version: 2.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 2.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tatumio/sdk':
         specifier: ^2.2.95
-        version: 2.2.96(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
+        version: 2.2.98(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
       '@thirdweb-dev/sdk':
         specifier: ^4.0.99
-        version: 4.0.99(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)(utf-8-validate@5.0.10)
+        version: 4.0.99(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)(utf-8-validate@5.0.10)
       '@web3-dashboard/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -83,19 +83,19 @@ importers:
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^4.4.1
-        version: 4.4.1(vite@5.4.18(@types/node@22.14.1))
+        version: 4.5.0(vite@5.4.19(@types/node@22.15.29))
       autoprefixer:
         specifier: ^10.4.21
-        version: 10.4.21(postcss@8.5.3)
+        version: 10.4.21(postcss@8.5.4)
       postcss:
         specifier: ^8.4.35
-        version: 8.5.3
+        version: 8.5.4
       tailwindcss:
-        specifier: ^4.0.14
-        version: 4.1.4
+        specifier: ^4.1.4
+        version: 4.1.8
       vite:
         specifier: ^5.1.6
-        version: 5.4.18(@types/node@22.14.1)
+        version: 5.4.19(@types/node@22.15.29)
 
   packages/ui:
     dependencies:
@@ -111,10 +111,10 @@ importers:
     devDependencies:
       '@types/react':
         specifier: ^18.2.67
-        version: 18.3.18
+        version: 18.3.23
       tsup:
         specifier: ^8.4.0
-        version: 8.4.0(jiti@1.21.7)(postcss@8.5.3)(typescript@5.8.3)(yaml@2.7.0)
+        version: 8.5.0(jiti@1.21.7)(postcss@8.5.4)(typescript@5.8.3)(yaml@2.7.0)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -600,6 +600,12 @@ packages:
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
 
+  '@eslint-community/eslint-utils@4.7.0':
+    resolution: {integrity: sha512-dyybb3AcajC7uha6CvhdVRJqaKyn7w2YKqKyAN37NKYgZT36w+iRb0Dymmc5qEJ549c/S31cMMSFd75bteCpCw==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
+
   '@eslint-community/regexpp@4.12.1':
     resolution: {integrity: sha512-CCZCDJuduB9OUkFkY2IgppNZMi2lBQgD2qzwXkEia16cge2pijY/aXi96CJMquDMn3nJdlPV1A5KrJEXwfLNzQ==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
@@ -612,24 +618,24 @@ packages:
     resolution: {integrity: sha512-RI17tsD2frtDu/3dmI7QRrD4bedNKPM08ziRYaC5AhkGrzIAJelm9kJU1TznK+apx6V+cqRz8tfpEeG3oIyjxw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/core@0.13.0':
-    resolution: {integrity: sha512-yfkgDw1KR66rkT5A8ci4irzDysN7FRpq3ttJolR88OqQikAWqwA8j5VZyas+vjyBNFIJ7MfybJ9plMILI2UrCw==}
+  '@eslint/core@0.14.0':
+    resolution: {integrity: sha512-qIbV0/JZr7iSDjqAc60IqbLdsj9GDt16xQtWD+B78d/HAlvysGdZZ6rpJHGAc2T0FQx1X6thsSPdnoiGKdNtdg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/eslintrc@3.3.1':
     resolution: {integrity: sha512-gtF186CXhIl1p4pJNGZw8Yc6RlshoePRvE0X91oPGb3vZ8pM3qOS9W9NGPat9LziaBV7XrJWGylNQXkGcnM3IQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/js@9.25.0':
-    resolution: {integrity: sha512-iWhsUS8Wgxz9AXNfvfOPFSW4VfMXdVhp1hjkZVhXCrpgh/aLcc45rX6MPu+tIVUWDw0HfNwth7O28M1xDxNf9w==}
+  '@eslint/js@9.28.0':
+    resolution: {integrity: sha512-fnqSjGWd/CoIp4EXIxWVK/sHA6DOHN4+8Ix2cX5ycOY7LG0UY8nHCU5pIp2eaE1Mc7Qd8kHspYNzYXT2ojPLzg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/object-schema@2.1.6':
     resolution: {integrity: sha512-RBMg5FRL0I0gs51M/guSAj5/e14VQ4tpZnQNWwuDT66P14I43ItmPfIZRhO9fUVIPOAQXU47atlywZ/czoqFPA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/plugin-kit@0.2.8':
-    resolution: {integrity: sha512-ZAoA40rNMPwSm+AeHpCq8STiNAwzWLJuP8Xv4CHIc9wv/PSuExjMrmjfYNj682vW0OOiZ1HKxzvjQr9XZIisQA==}
+  '@eslint/plugin-kit@0.3.1':
+    resolution: {integrity: sha512-0J+zgWxHN+xXONWIyPWKFMgVuJoZuGiIFu8yxk7RJjxkzpGmyja5wRFqZIVtjDVOQpV+Rw0iOAjYPE2eQyjr0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eth-optimism/contracts@0.6.0':
@@ -805,8 +811,8 @@ packages:
   '@harmony-js/utils@0.1.58':
     resolution: {integrity: sha512-JqKWk7QichGXOE8vKpkC4FowGEKyXTkGW21CyP5FzmgAVDGLY6qutoBfK2GzGvmd2fyZy3MDOabSEMcADrAq+A==}
 
-  '@headlessui/react@2.2.2':
-    resolution: {integrity: sha512-zbniWOYBQ8GHSUIOPY7BbdIn6PzUOq0z41RFrF30HbjsxG6Rrfk+6QulR8Kgf2Vwj2a/rE6i62q5vo+2gI5dJA==}
+  '@headlessui/react@2.2.4':
+    resolution: {integrity: sha512-lz+OGcAH1dK93rgSMzXmm1qKOJkBUqZf1L4M8TWLNplftQD3IkoEDdUFNfAn4ylsN6WOTVtWaLmvmaHOUk1dTA==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^18.2.0
@@ -1365,6 +1371,9 @@ packages:
     peerDependencies:
       react: ^18.2.0
 
+  '@rolldown/pluginutils@1.0.0-beta.9':
+    resolution: {integrity: sha512-e9MeMtVWo186sgvFFJOPGy7/d2j2mZhLJIdVW0C/xDluuOvymEATqz6zKsP0ZmXGzQtqlyjz5sC1sYQUoJG98w==}
+
   '@rollup/rollup-android-arm-eabi@4.40.0':
     resolution: {integrity: sha512-+Fbls/diZ0RDerhE8kyC6hjADCXA1K4yVNlH0EYfd2XjyH0UGgzaQ8MlT0pCXAThfxv3QUAczHaL+qSv1E4/Cg==}
     cpu: [arm]
@@ -1584,23 +1593,23 @@ packages:
     peerDependencies:
       react: ^18.2.0
 
-  '@tanstack/react-virtual@3.13.6':
-    resolution: {integrity: sha512-WT7nWs8ximoQ0CDx/ngoFP7HbQF9Q2wQe4nh2NB+u2486eX3nZRE40P9g6ccCVq7ZfTSH5gFOuCoVH5DLNS/aA==}
+  '@tanstack/react-virtual@3.13.9':
+    resolution: {integrity: sha512-SPWC8kwG/dWBf7Py7cfheAPOxuvIv4fFQ54PdmYbg7CpXfsKxkucak43Q0qKsxVthhUJQ1A7CIMAIplq4BjVwA==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  '@tanstack/virtual-core@3.13.6':
-    resolution: {integrity: sha512-cnQUeWnhNP8tJ4WsGcYiX24Gjkc9ALstLbHcBj1t3E7EimN6n6kHH+DPV4PpDnuw00NApQp+ViojMj1GRdwYQg==}
+  '@tanstack/virtual-core@3.13.9':
+    resolution: {integrity: sha512-3jztt0jpaoJO5TARe2WIHC1UQC3VMLAFUW5mmMo0yrkwtDB2AQP0+sh10BVUpWrnvHjSLvzFizydtEGLCJKFoQ==}
 
-  '@tatumio/algo@2.2.96':
-    resolution: {integrity: sha512-uH+wbOHgCJIR7i+v4+GEcZtX5ba5tLKwSBVXe/2rpAF3HEl0chm7e5UvVh+ZY1VtqALrKm+Bvz0/vvgnCPsrHA==}
+  '@tatumio/algo@2.2.98':
+    resolution: {integrity: sha512-9X1PETkd0uYtCC2i9HQhjJVJpsXcd8SewEBWVaf43oXtn0x5JzN1MIqeK6kIkR1Uvt8H64v5bhMCAvlZwhKaMw==}
 
-  '@tatumio/api-client@2.2.96':
-    resolution: {integrity: sha512-1oX0PhpxyUHg8PEWEkcZ66PfbCI3ZPknmhmuKVcM74WMzGkDDgtdW5eoZV1WWQs6qVqfPQ7yHvEzGlS3IzwRIQ==}
+  '@tatumio/api-client@2.2.98':
+    resolution: {integrity: sha512-Z2Qc/EM6e0DNmzFmyVnUdbHwCz4PYjO9nV1nZSMyFHWjz/QTRjD17zCbAbBNfyj8Qo2+L1QHAei8QRDBpjEhNw==}
 
-  '@tatumio/bch@2.2.96':
-    resolution: {integrity: sha512-xFh5lgVSB4aLo5uDrvZ+X1k302679+kTCzIMJCNmayVqoPR1NtBRubQuDp7MvGWm8oGNv1LUtvyA1OefbLzp1w==}
+  '@tatumio/bch@2.2.98':
+    resolution: {integrity: sha512-GsRZyAVASdx3nCamDyzlufkRNyo9VqkFdJQMjHiB1Evx352/iE/A0D+LxFzwOs5Gzo+pvrjgYN1VIH+7vLj1jQ==}
 
   '@tatumio/bitcoincash-ops@2.0.0':
     resolution: {integrity: sha512-jUFXUnYL1mJeYv+NvpeYSgabD55yT7hVM4Q1/NnOOfhwRb4tA2WYFXOxn9pWZHn0MsWEQ9i0yMkAvH8ibRPVug==}
@@ -1609,77 +1618,77 @@ packages:
     resolution: {integrity: sha512-sEGSzpoGPnMQ3aEXnUfujdtbjkTJYQgPEmbfmh8yWyI6Di1D9sEYYoBLj6OyU5dCT+eBkDRvPzWJvsLcHrRJYg==}
     engines: {node: '>=10.15.1'}
 
-  '@tatumio/bsc@2.2.96':
-    resolution: {integrity: sha512-Fck0G5qwVe1da2VLC1CnNRTi6sehKNO1JTtGEiKxpp2rTgrIr1UVmw3xk+Y3gyNfnDogBbwXPMGKT0/JsM+Zgw==}
+  '@tatumio/bsc@2.2.98':
+    resolution: {integrity: sha512-pHShWSurABJAoxwMKA2N7KPaCcV4eHYi0Wejisc8wSbKrSLs/hQWH+FLDgOVp4/TWuNEMGH/JC5o0AHFl3s7hg==}
 
-  '@tatumio/btc@2.2.96':
-    resolution: {integrity: sha512-2jm0dgExnJDq2mpAHjWotgKaeKPevAr+9rqskRXsE71feuU5L8k7vYgFblGHhxdvhQou9S1y1w3rZO3Ot7H/CQ==}
+  '@tatumio/btc@2.2.98':
+    resolution: {integrity: sha512-svRiKd/JaVgSXILjK+8WQsCw0hrIs5nMOtxJmPLQtgQD0899lNb0HwLOGMZzJbtVoBBCsp32bfPRlkYSgRuDDQ==}
 
-  '@tatumio/celo@2.2.96':
-    resolution: {integrity: sha512-uQfo2huDp4wqVba5lxsuuIXJKZY5Q/h3gtTNvFW6xsHjqLhbhTjUXD3plzWmTHHpqhDm0Idpqnala3IshO50ZQ==}
+  '@tatumio/celo@2.2.98':
+    resolution: {integrity: sha512-XiGKnN4ZxWhTcTXzPKMb5c67erL0q6lxfZEYzsILQZ4s2IU7EkmRmtHfVZAFUtQc7yaAONzQknADFT7cBBPqvA==}
 
-  '@tatumio/doge@2.2.96':
-    resolution: {integrity: sha512-Zsz0Nu4/hvWX4LjjuvE6XXE3FTc+jGKrfNHu3nXN+fbH/Z7zY4S4WzP+f+RjSfQm7d/U+0ciBWzqJuk5BqAnFw==}
+  '@tatumio/doge@2.2.98':
+    resolution: {integrity: sha512-tHMmDq/ZR/e9hc5l9uzpJx7w1Ok0qUKq1td+gJH+zAQEy8Ibpi8dRX1IPDtkBYkfm10D30TyTg07BSaFcf3tLw==}
 
-  '@tatumio/egld@2.2.96':
-    resolution: {integrity: sha512-U7R5P5egGHVSz/zobMdFz3iehBKsTcWRdZLvc6sdljY9l9DMNO5Dqw+u+XJOYdg+1ZhVuHjUVP1g/GJ04LjPhA==}
+  '@tatumio/egld@2.2.98':
+    resolution: {integrity: sha512-Zhj/GU7bI5piNv/jGHRZCwGnuOnoSNFuEtUzpZZZypAfeEA4pztAjzB83vdT//iG9jdOVhGYxs6YoBeovVQkTQ==}
 
-  '@tatumio/eth@2.2.96':
-    resolution: {integrity: sha512-SpJP7XPWQTOZ9QTBEZGkcn3lV650u0i+nZOefhlG2oJah+/YI9UejnH7Rhe+ObmvkxpmbKHtb/WEBdsS5PLdVQ==}
+  '@tatumio/eth@2.2.98':
+    resolution: {integrity: sha512-bFMZj2sm7ipAPFhuqhB0KfiBJXguDQz1rkPju3vhuFwCNqqTNkgzD37fZcbAmZwaQ8PBn1g0QkGjyh3LDa7Xzg==}
 
-  '@tatumio/kcs@2.2.96':
-    resolution: {integrity: sha512-06/vtxfniysRBJyp0/PPrzg3x6B1k/eNVrzCfpoYGefLBBlv25rAp7W0HfHvj5plOTfunemBieG92H+PNQOppA==}
+  '@tatumio/kcs@2.2.98':
+    resolution: {integrity: sha512-MpBcaZqQX57NuLWaEyh+oSmpESIgBaJOMZrK6M3n+mjO+6x6PLDmfiuZx8ppVudJ+KPNNr/sPQw3kWGWLxmRZw==}
 
-  '@tatumio/ltc@2.2.96':
-    resolution: {integrity: sha512-KSYqRjQtlMenCHFJ1LPcW1EyU1idG8ty0N6DGLH6sg9bAfOCFXCyXNrsEe+F6mfys8c1ZTPDixkePbZ+lg7twA==}
+  '@tatumio/ltc@2.2.98':
+    resolution: {integrity: sha512-jjlcLMmhq9OiEu2l8mk2cPZF1tOvL1yOSCIwL8t9WHbVOA+bOy/PJ++i9MVglaP8LtLpLNb+M+QHgmbW+PDa2A==}
 
-  '@tatumio/one@2.2.96':
-    resolution: {integrity: sha512-eIKjGPLMH9NsyGj76vlQ+hjldW1wuZuFT0ZzQsm6Gz3eQ2G9RzVZW7//33vkfUuP/syd9SVJjkY0UJPN/i/veQ==}
+  '@tatumio/one@2.2.98':
+    resolution: {integrity: sha512-mTKiuX7cPAl4RBdIfNGO9geg8JY38TMlBfhPfBM6VqkGP6D617Mf8zVn3puioj5XvefuTI7/f4co/2AiP/e+oA==}
 
-  '@tatumio/polygon@2.2.96':
-    resolution: {integrity: sha512-C+R2zpzLSFV5UpKD43WuVOTSHN6jufK1vqVboW7de23YQ5ERe0Gx3gyPbg/9PB+8DJL1mXcLY3VrunAmiRxN4A==}
+  '@tatumio/polygon@2.2.98':
+    resolution: {integrity: sha512-zgdFGfDvZfmVAPOMUE4bl14/p9yjJC4J6XHsamdyLqXtZO/Dyg5nolyBJqNz8Zk02J9uncVB6tUeguITCOOyWQ==}
 
   '@tatumio/pushdata-bitcoin@1.2.2':
     resolution: {integrity: sha512-4FbU4NuLWbPbV2+z5IO7l9RNXNOhoEz/Eo3CJqP3zDQqObhMGcdNgWrTwg5uoYX/8zjv4HSasabzstV1HzIb9g==}
 
-  '@tatumio/sdk@2.2.96':
-    resolution: {integrity: sha512-pMLzLWnbvgyDjVNQ5Jk7+egeNTa3QD1bFMLGZGpCbkzF72mXnJJ/LPjzRW7zMI9kCfj4HO/qGAAK7jDdGh49eA==}
+  '@tatumio/sdk@2.2.98':
+    resolution: {integrity: sha512-hWT91NUTPfacnx8rm+YAOpsaxeUIxfJmgFiQMOpwyDZnmwVZJZi/3a3JWJMinRXHGs58fyczok0R/KWoKfQnlg==}
 
-  '@tatumio/shared-abstract-sdk@2.2.96':
-    resolution: {integrity: sha512-vdCkGbn542G1fbk+wYYqACfnxJbUPhXT7THrN4CULeFKRIGhO78WR5VscuJ6cHXqwtTu1j8CFQVwf83CGKd/mw==}
+  '@tatumio/shared-abstract-sdk@2.2.98':
+    resolution: {integrity: sha512-gMOycoqHg1DlDwYzp6BnonJS3VnpPO7CKF2m5Buqy+byxWMaM47YwjQFcxYyyWe1VQKYKvy1ojU7EOFVYjboGA==}
 
-  '@tatumio/shared-blockchain-abstract@2.2.96':
-    resolution: {integrity: sha512-zFaMs2xLtNs6hXDz06GYx8SqRQnFtb7BLpLUoXcr8ZEycOtnXB/s9ZQdO5zIKDsYsQ+D3QK12gSxEMSflgJ65A==}
+  '@tatumio/shared-blockchain-abstract@2.2.98':
+    resolution: {integrity: sha512-+tthBBorK+gZjIyTkc2UWHvZoVe39Gk2K5EUU7eNfWcOkvl14nixsqu+i+c//2D5o6N1++20AJ1HE9qLkplhEA==}
 
-  '@tatumio/shared-blockchain-btc-based@2.2.96':
-    resolution: {integrity: sha512-ZDGJYvC9Sl4PHyO7oSsj7APyR40MB7ir6E+wcU1vlDcwqABOYxqFdW8yNaN6Uf476CHsPNImYUVOuJlfoKQS4A==}
+  '@tatumio/shared-blockchain-btc-based@2.2.98':
+    resolution: {integrity: sha512-QibRHMNWOAqHruRtwZTQuIxGccVfZShvyWD2ekEU/thxq+5A9sxQfEe/wPZa+pSyOUcm2/tbzanDMHKLgyeIcQ==}
 
-  '@tatumio/shared-blockchain-evm-based@2.2.96':
-    resolution: {integrity: sha512-qMzX4J6bWnrAiyPU6XBkPUpj9KGF5ugp1V9uDJyK+4DfYDFI5wjbfMO3T7DpnGLnRiJ2sa+HDw3fB9LV5fFGJA==}
+  '@tatumio/shared-blockchain-evm-based@2.2.98':
+    resolution: {integrity: sha512-7BDR2224VHN9jzt3dZwwqDDzxsTkb5avmdIYWiZSV7GWyem1g64gxNgu1Ba+nYG5kapyfZt8LYoKyp9YwB99Dw==}
 
-  '@tatumio/shared-core@2.2.96':
-    resolution: {integrity: sha512-EAg433vdqUE+qM/r6aZxVbUt/UQ7U0bRgdt5KMtZI4H741GecnihkuGjDkbdr4AuJx9hZJfVABmrAx5/lAFT7g==}
+  '@tatumio/shared-core@2.2.98':
+    resolution: {integrity: sha512-cRoIRJ1qotBIpVHMX7wombf0UYhqV6B20/GVcZu5vdbq8Rn+ufdvfAqXmsLkUmH3zF2Uv6w9dG5v++3EllOWEA==}
 
-  '@tatumio/shared-testing-btc-based@2.2.96':
-    resolution: {integrity: sha512-VLpq7KPOPCXkD0bZp01P3Uk/2QFtgfMxQ3ulxDYgKKsTM4xxHSWIei5JFKOzXJ7jS2oq7O1Bk1FMuhMee8vCsQ==}
+  '@tatumio/shared-testing-btc-based@2.2.98':
+    resolution: {integrity: sha512-U82eCjXU0xWh3v9glcuAyDIIK0VrYG/jhPwMEWUdLabyF8uBWpMGOhFCZSxq8bPBSuxEJ1ePlFnpBs9aXZaz8A==}
 
-  '@tatumio/shared-testing-common@2.2.96':
-    resolution: {integrity: sha512-I8JNseY3+KqmVahpnMUiLK1RkiKb48tsA2rTgfMSSzErnj7Dh4YHvxB/5efieu2a8HOoX5HZJ7mlXQzNOYEFYA==}
+  '@tatumio/shared-testing-common@2.2.98':
+    resolution: {integrity: sha512-USxScSRnR+WVNezHB6SHjU0pM6PEwXwsT7UP9kxkKOF+T2ktmbrAVepWgfFZBhhbQsSBcSL61pBIhIS4mqW72w==}
 
-  '@tatumio/shared-testing-evm-based@2.2.96':
-    resolution: {integrity: sha512-KljuVDwOe97hiH7quuiGa48r5iOlfOvdzjIAXzp0HgsdtgnFkg1TMbbwNhdCKGzkpybi1mOEDxH8ymTRpGLi2A==}
+  '@tatumio/shared-testing-evm-based@2.2.98':
+    resolution: {integrity: sha512-ezwDEVJMhBR++xUqh8wpwZvBp3DHcPe2HM16kGqC72yPbBDHeCC+8XD7oWoMNuNB6B3ivnkM90pg8JZHFNtwrA==}
 
-  '@tatumio/shared-testing-xrp-based@2.2.96':
-    resolution: {integrity: sha512-LkSV+Id8Dbqd4QCHB1kjU9E/puBh/0RcDR3nARwESIhFDHwe8Y8JohgEN1ceHCgz5EL+PXG9MGjNWi8CWHkx2w==}
+  '@tatumio/shared-testing-xrp-based@2.2.98':
+    resolution: {integrity: sha512-3x6MqR7C7mfEmuPNc/mkrnx6//bR1RiX9PUVmCvHNfuUbUK1b4CyRwEhg5T1hQjkWS/4Ivu0sUXXQG6A9prkIA==}
 
-  '@tatumio/solana@2.2.96':
-    resolution: {integrity: sha512-JwDLkqDTdhGVmx6eGevKWFxR0TpXigSVnZ8wq4ldzXveKXEBrduhFGSKi1LOOyMDgKpOnZZxwy94inN4TQJPVQ==}
+  '@tatumio/solana@2.2.98':
+    resolution: {integrity: sha512-CFiFOg6wJB3zfRHOyU8f22/29Z1FPYZ9OMyGczDash5HJ/dn2s1HCSB8o7zS2gg+dneW2spc10//+NjE0sxi7g==}
 
-  '@tatumio/tron@2.2.96':
-    resolution: {integrity: sha512-CwG2/HSxP3jRzJHXqHzP/tO9X5d2eQ4FcHfSUe5b/8U6xeXe5K3rQ3zcO1B5WbFqO6l8qGwr8oHwPLE1zOIlcQ==}
+  '@tatumio/tron@2.2.98':
+    resolution: {integrity: sha512-6t7qxTeC1fQSE3H2yOWAOyEe5glCHwe7svR2POhhvpdCR4FP+fsy0zdLni653sAh8wCM2KJ8znEzTvLlpKquqA==}
 
-  '@tatumio/xrp@2.2.96':
-    resolution: {integrity: sha512-+E4pOvUnh6QAI1tV68jYvvK2iZD74yjheCqr5BMoEv/CFzZEvoO7GnE/Wp4JQpEJwAi5CyvaYfqLAkrjtmXGWg==}
+  '@tatumio/xrp@2.2.98':
+    resolution: {integrity: sha512-na+Pp67fVnIdE3UeN8voBHSWQkgksfyqrqJEpTaAO+laNTTDkMKwQkVDbiJ3yqtwXyMtvuRDrJVOKPCxmsTJ9Q==}
 
   '@thirdweb-dev/chains@0.1.120':
     resolution: {integrity: sha512-6wj8eIylLk8wSyTUeN70LD72yN+QIwyynDfKtVGJXTcrEN2K+vuqnRE20gvA2ayX7KMyDyy76JxPlyv6SZyLGw==}
@@ -1787,8 +1796,8 @@ packages:
   '@types/node@13.13.52':
     resolution: {integrity: sha512-s3nugnZumCC//n4moGGe6tkNMyYEdaDBitVjwPxXmR5lnMG5dHePinH2EdxkG3Rh1ghFHHixAG4NJhpJW1rthQ==}
 
-  '@types/node@22.14.1':
-    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
+  '@types/node@22.15.29':
+    resolution: {integrity: sha512-LNdjOkUDlU1RZb8e1kOIUpN1qQUlzGkEtbVNo53vbrwDg5om6oduhm4SiUaPW5ASTXhAiP0jInWG8Qx9fVlOeQ==}
 
   '@types/node@22.7.5':
     resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
@@ -1802,13 +1811,13 @@ packages:
   '@types/prop-types@15.7.14':
     resolution: {integrity: sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ==}
 
-  '@types/react-dom@18.3.5':
-    resolution: {integrity: sha512-P4t6saawp+b/dFrUr2cvkVsfvPguwsxtH6dNIYRllMsefqFzkZk5UIjzyDOv5g1dXIPdG4Sp1yCR4Z6RCUsG/Q==}
+  '@types/react-dom@18.3.7':
+    resolution: {integrity: sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==}
     peerDependencies:
       '@types/react': ^18.2.67
 
-  '@types/react@18.3.18':
-    resolution: {integrity: sha512-t4yC+vtgnkYjNSKlFx1jkAhH8LgTo2N/7Qvi83kdEaUtMDiwpbLAktKDaAMlRcJ5eSxZkH74eEGt1ky31d7kfQ==}
+  '@types/react@18.3.23':
+    resolution: {integrity: sha512-/LDXMQh55EzZQ0uVAZmKKhfENivEvWz6E+EYzh+/MCjMhNsotd+ZHhBGIjFDTi6+fz0OhQQQLbTgdQIxxCsC0w==}
 
   '@types/responselike@1.0.3':
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
@@ -1828,51 +1837,61 @@ packages:
   '@types/ws@8.18.1':
     resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
 
-  '@typescript-eslint/eslint-plugin@8.30.1':
-    resolution: {integrity: sha512-v+VWphxMjn+1t48/jO4t950D6KR8JaJuNXzi33Ve6P8sEmPr5k6CEXjdGwT6+LodVnEa91EQCtwjWNUCPweo+Q==}
+  '@typescript-eslint/eslint-plugin@8.33.0':
+    resolution: {integrity: sha512-CACyQuqSHt7ma3Ns601xykeBK/rDeZa3w6IS6UtMQbixO5DWy+8TilKkviGDH6jtWCo8FGRKEK5cLLkPvEammQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
-      '@typescript-eslint/parser': ^8.0.0 || ^8.0.0-alpha.0
+      '@typescript-eslint/parser': ^8.33.0
       eslint: ^8.57.0 || ^9.0.0
       typescript: '>=4.8.4 <5.9.0'
 
-  '@typescript-eslint/parser@8.30.1':
-    resolution: {integrity: sha512-H+vqmWwT5xoNrXqWs/fesmssOW70gxFlgcMlYcBaWNPIEWDgLa4W9nkSPmhuOgLnXq9QYgkZ31fhDyLhleCsAg==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-    peerDependencies:
-      eslint: ^8.57.0 || ^9.0.0
-      typescript: '>=4.8.4 <5.9.0'
-
-  '@typescript-eslint/scope-manager@8.30.1':
-    resolution: {integrity: sha512-+C0B6ChFXZkuaNDl73FJxRYT0G7ufVPOSQkqkpM/U198wUwUFOtgo1k/QzFh1KjpBitaK7R1tgjVz6o9HmsRPg==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@typescript-eslint/type-utils@8.30.1':
-    resolution: {integrity: sha512-64uBF76bfQiJyHgZISC7vcNz3adqQKIccVoKubyQcOnNcdJBvYOILV1v22Qhsw3tw3VQu5ll8ND6hycgAR5fEA==}
+  '@typescript-eslint/parser@8.33.0':
+    resolution: {integrity: sha512-JaehZvf6m0yqYp34+RVnihBAChkqeH+tqqhS0GuX1qgPpwLvmTPheKEs6OeCK6hVJgXZHJ2vbjnC9j119auStQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
       typescript: '>=4.8.4 <5.9.0'
 
-  '@typescript-eslint/types@8.30.1':
-    resolution: {integrity: sha512-81KawPfkuulyWo5QdyG/LOKbspyyiW+p4vpn4bYO7DM/hZImlVnFwrpCTnmNMOt8CvLRr5ojI9nU1Ekpw4RcEw==}
+  '@typescript-eslint/project-service@8.33.0':
+    resolution: {integrity: sha512-d1hz0u9l6N+u/gcrk6s6gYdl7/+pp8yHheRTqP6X5hVDKALEaTn8WfGiit7G511yueBEL3OpOEpD+3/MBdoN+A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@typescript-eslint/typescript-estree@8.30.1':
-    resolution: {integrity: sha512-kQQnxymiUy9tTb1F2uep9W6aBiYODgq5EMSk6Nxh4Z+BDUoYUSa029ISs5zTzKBFnexQEh71KqwjKnRz58lusQ==}
+  '@typescript-eslint/scope-manager@8.33.0':
+    resolution: {integrity: sha512-LMi/oqrzpqxyO72ltP+dBSP6V0xiUb4saY7WLtxSfiNEBI8m321LLVFU9/QDJxjDQG9/tjSqKz/E3380TEqSTw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/tsconfig-utils@8.33.0':
+    resolution: {integrity: sha512-sTkETlbqhEoiFmGr1gsdq5HyVbSOF0145SYDJ/EQmXHtKViCaGvnyLqWFFHtEXoS0J1yU8Wyou2UGmgW88fEug==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '>=4.8.4 <5.9.0'
 
-  '@typescript-eslint/utils@8.30.1':
-    resolution: {integrity: sha512-T/8q4R9En2tcEsWPQgB5BQ0XJVOtfARcUvOa8yJP3fh9M/mXraLxZrkCfGb6ChrO/V3W+Xbd04RacUEqk1CFEQ==}
+  '@typescript-eslint/type-utils@8.33.0':
+    resolution: {integrity: sha512-lScnHNCBqL1QayuSrWeqAL5GmqNdVUQAAMTaCwdYEdWfIrSrOGzyLGRCHXcCixa5NK6i5l0AfSO2oBSjCjf4XQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
       typescript: '>=4.8.4 <5.9.0'
 
-  '@typescript-eslint/visitor-keys@8.30.1':
-    resolution: {integrity: sha512-aEhgas7aJ6vZnNFC7K4/vMGDGyOiqWcYZPpIWrTKuTAlsvDNKy2GFDqh9smL+iq069ZvR0YzEeq0B8NJlLzjFA==}
+  '@typescript-eslint/types@8.33.0':
+    resolution: {integrity: sha512-DKuXOKpM5IDT1FA2g9x9x1Ug81YuKrzf4mYX8FAVSNu5Wo/LELHWQyM1pQaDkI42bX15PWl0vNPt1uGiIFUOpg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/typescript-estree@8.33.0':
+    resolution: {integrity: sha512-vegY4FQoB6jL97Tu/lWRsAiUUp8qJTqzAmENH2k59SJhw0Th1oszb9Idq/FyyONLuNqT1OADJPXfyUNOR8SzAQ==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '>=4.8.4 <5.9.0'
+
+  '@typescript-eslint/utils@8.33.0':
+    resolution: {integrity: sha512-lPFuQaLA9aSNa7D5u2EpRiqdAUhzShwGg/nhpBlc4GR6kcTABttCuyjFs8BcEZ8VWrjCBof/bePhP3Q3fS+Yrw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0
+      typescript: '>=4.8.4 <5.9.0'
+
+  '@typescript-eslint/visitor-keys@8.33.0':
+    resolution: {integrity: sha512-7RW7CMYoskiz5OOGAWjJFxgb7c5UNjTG292gYhWeOAcFmYCtVCSqjqSBj5zMhxbXo2JOW95YYrUWJfU0zrpaGQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@use-gesture/core@10.3.1':
@@ -1883,8 +1902,8 @@ packages:
     peerDependencies:
       react: ^18.2.0
 
-  '@vitejs/plugin-react@4.4.1':
-    resolution: {integrity: sha512-IpEm5ZmeXAP/osiBXVVP5KjFMzbWOonMs0NaQQl+xYnUAcq4oHUBsF2+p4MgKWG4YMmFYJU8A6sxRPuowllm6w==}
+  '@vitejs/plugin-react@4.5.0':
+    resolution: {integrity: sha512-JuLWaEqypaJmOJPLWwO335Ig6jSgC1FTONCWAxnqcQthLTK/Yc9aH6hr9z/87xciejbQcnP3GnA1FWUSWeXaeg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^5.1.6
@@ -1917,6 +1936,7 @@ packages:
 
   '@walletconnect/ethereum-provider@2.12.2':
     resolution: {integrity: sha512-vBl2zCnNm2iPaomJdr5YT16cT7aa8cH2WFs6879XPngU5i7HXS3bU6TamhyhKKl13sdIfifmCkCC+RWn5GdPMw==}
+    deprecated: 'Reliability and performance improvements. See: https://github.com/WalletConnect/walletconnect-monorepo/releases'
 
   '@walletconnect/events@1.0.1':
     resolution: {integrity: sha512-NPTqaoi0oPBVNuLv7qPaJazmGHs5JGyO8eEAk5VGKmJzDR7AHzD4k6ilox5kxk1iwiOnFopBOOMLs86Oa76HpQ==}
@@ -1973,6 +1993,7 @@ packages:
 
   '@walletconnect/modal@2.7.0':
     resolution: {integrity: sha512-RQVt58oJ+rwqnPcIvRFeMGKuXb9qkgSmwz4noF8JZGUym3gUAzVs+uW2NQ1Owm9XOJAV+sANrtJ+VoVq1ftElw==}
+    deprecated: Please follow the migration guide on https://docs.reown.com/appkit/upgrade/wcm
 
   '@walletconnect/randombytes@1.1.0':
     resolution: {integrity: sha512-X+LO/9ClnXX2Q/1+u83qMnohVaxC4qsXByM/gMSwGMrUObxEiqEWS+b9Upg9oNl6mTr85dTCRF8W17KVcKKXQw==}
@@ -2284,10 +2305,6 @@ packages:
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
 
-  bip-schnorr@0.6.4:
-    resolution: {integrity: sha512-dNKw7Lea8B0wMIN4OjEmOk/Z5qUGqoPDY0P2QttLqGk1hmDPytLWW8PR5Pb6Vxy6CprcdEgfJpOjUu+ONQveyg==}
-    engines: {node: '>=8.0.0'}
-
   bip174@2.1.1:
     resolution: {integrity: sha512-mdFV5+/v0XyNYXjBS6CQPLo9ekCx4gtKZFnJm5PMto7Fs9hTTDpkkzOB7/FtluRI6JbUUAu+snTYfJRgHLZbZQ==}
     engines: {node: '>=8.0.0'}
@@ -2324,8 +2341,8 @@ packages:
   bitcore-lib-ltc@10.0.0:
     resolution: {integrity: sha512-AOTvO98RLcyOg4jrsiwwnQ5mJhQiADCKN0iKbHDyvsvTJGjCw6hI2vxweZNUgcIC8LLFEkWUy4GqQxATwtS0VQ==}
 
-  bitcore-lib@10.0.2:
-    resolution: {integrity: sha512-x7bWAqZdk5B/aVM8ppcenErhjQ2Q8q+SIwqNkB+iKPDsYUCgx7Yvl2SCyQriU23HEJlfqkzBdsFm6tO0DbCikw==}
+  bitcore-lib@10.8.0:
+    resolution: {integrity: sha512-E3J8+Qs+ATYJdOd5VfJlWuWN3zd7icJUHOW01bbYmrDnBoH/aJzfgkO66fAnNxYdf4m+Uir5sr+lLvzYEgwTKg==}
 
   bl@4.1.0:
     resolution: {integrity: sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==}
@@ -2350,6 +2367,9 @@ packages:
 
   bn.js@4.12.1:
     resolution: {integrity: sha512-k8TVBiPkPJT9uHLdOKfFpqcfprwBFOAAXXozRubr7R7PfIuKvQlzcI4M0pALeqXN09vdaMbUdUj+pass+uULAg==}
+
+  bn.js@4.12.2:
+    resolution: {integrity: sha512-n4DSx829VRTRByMRGdjQ9iqsN0Bh4OolPsFnaZBLcbi8iXcB+kJ9s7EnRt4wILZNV3kPLHkRVfOc/HvhC3ovDw==}
 
   bn.js@5.2.1:
     resolution: {integrity: sha512-eXRvHzWyYPBuB4NBy0cmYQjGitUrtqwbvlzP3G6VFnNRbsZQIxQ10PbKKHt8gZ/HW/D/747aDl+QkDqg3KQLMQ==}
@@ -2607,6 +2627,9 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
+  confbox@0.1.8:
+    resolution: {integrity: sha512-RMtmw0iFkeR4YV+fUOSucriAQNb9g8zFR52MWCtl+cCZOFRNL6zeB395vPzFhEjjn4fMxXudmELnl/KF/WrK6w==}
+
   consola@3.4.2:
     resolution: {integrity: sha512-5IKcdX0nnYavi6G7TtOhwkYzyjfJlatbjMjuLSfE2kYT5pMDOilZ4OvMhi637CcDICTmz3wARPoyhqyX1Y+XvA==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -2728,6 +2751,15 @@ packages:
 
   debug@4.4.0:
     resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  debug@4.4.1:
+    resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -2971,8 +3003,8 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
 
-  eslint-plugin-react-refresh@0.4.19:
-    resolution: {integrity: sha512-eyy8pcr/YxSYjBoqIFSrlbn9i/xvxUFa8CjzAYo9cFjgGXqq1hyjihcpZvxRLalpaWmueWR81xn7vuKmAFijDQ==}
+  eslint-plugin-react-refresh@0.4.20:
+    resolution: {integrity: sha512-XpbHQ2q5gUF8BGOX4dHe+71qoirYMhApEPZ7sfhF/dNnOF1UXnCMGZf79SFTBO7Bz5YEIT4TMieSlJBWhP9WBA==}
     peerDependencies:
       eslint: '>=8.40'
 
@@ -2988,8 +3020,8 @@ packages:
     resolution: {integrity: sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  eslint@9.25.0:
-    resolution: {integrity: sha512-MsBdObhM4cEwkzCiraDv7A6txFXEqtNXOb877TsSp2FCkBNl8JfVQrmiuDqC1IkejT6JLPzYBXx/xAiYhyzgGA==}
+  eslint@9.28.0:
+    resolution: {integrity: sha512-ocgh41VhRlf9+fVpe7QKzwLj9c92fDiqOj8Y3Sd4/ZmVA4Btx4PlUYPq4pp9JDyupkf1upbEXecxL2mwNV7jPQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
     peerDependencies:
@@ -3177,6 +3209,9 @@ packages:
   find-up@5.0.0:
     resolution: {integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==}
     engines: {node: '>=10'}
+
+  fix-dts-default-cjs-exports@1.0.1:
+    resolution: {integrity: sha512-pVIECanWFC61Hzl2+oOCtoJ3F17kglZC/6N94eRWycFgBH35hHx0Li604ZIzhseh97mf2p0cv7vVrOZGoqhlEg==}
 
   flat-cache@4.0.1:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
@@ -3481,6 +3516,10 @@ packages:
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
+    engines: {node: '>= 4'}
+
+  ignore@7.0.5:
+    resolution: {integrity: sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg==}
     engines: {node: '>= 4'}
 
   import-fresh@3.3.1:
@@ -3800,6 +3839,9 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
+  magic-string@0.30.17:
+    resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
+
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
@@ -3931,6 +3973,9 @@ packages:
     resolution: {integrity: sha512-+NsyUUAZDmo6YVHzL/stxSu3t9YS1iljliy3BSDrXJ/dkn1KYdmtZODGGjLcc9XLgVVpH4KshHB8XmZgMhaBXg==}
     engines: {node: '>=10'}
     hasBin: true
+
+  mlly@1.7.4:
+    resolution: {integrity: sha512-qmdSIPC4bDJXgZTCR7XosJiNKySV7O215tsPtDN9iEO/7q/76b/ijtgRu/+epFXSJhijtTCCGp3DWS549P3xKw==}
 
   mock-fs@4.14.0:
     resolution: {integrity: sha512-qYvlv/exQ4+svI3UOvPUpLDF0OMX5euvUH0Ny4N5QyRyhNdgAgUrVH3iUINSzEPLvx0kbo/Bp28GJKIqvE7URw==}
@@ -4213,6 +4258,9 @@ packages:
   pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
 
+  pathe@2.0.3:
+    resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
+
   pathval@1.1.1:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
 
@@ -4251,6 +4299,9 @@ packages:
     resolution: {integrity: sha512-TfySrs/5nm8fQJDcBDuUng3VOUKsd7S+zqvbOTiGXHfxX4wK31ard+hoNuvkicM/2YFzlpDgABOevKSsB4G/FA==}
     engines: {node: '>= 6'}
 
+  pkg-types@1.3.1:
+    resolution: {integrity: sha512-/Jm5M4RvtBFVkKWRu2BLUTNP8/M2a+UwuAX+ae4770q1qVGtfjG+WTCupoZixokjmHiry8uI+dlY8KXYV5HVVQ==}
+
   platform@1.3.6:
     resolution: {integrity: sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==}
 
@@ -4283,8 +4334,8 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.5.3:
-    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
+  postcss@8.5.4:
+    resolution: {integrity: sha512-QSa9EBe+uwlGTFmHsPKokv3B/oEMQZxfqW0QqNCyhpa6mB1afzulwn8hihglqAb2pOw+BJgNlmXQ8la2VeHB7w==}
     engines: {node: ^10 || ^12 || >=14}
 
   preact@10.25.4:
@@ -4651,6 +4702,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.2:
+    resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   send@0.19.0:
     resolution: {integrity: sha512-dW41u5VfLXu8SJh5bwRmyYUbAoSB3c9uQh6L8h/KtsFREPWpbX1lrljJo186Jc4nmci/sGUZ9a0a0J2zgfq2hw==}
     engines: {node: '>= 0.8.0'}
@@ -4880,8 +4936,8 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
-  tailwindcss@4.1.4:
-    resolution: {integrity: sha512-1ZIUqtPITFbv/DxRmDr5/agPqJwF69d24m9qmM1939TJehgY539CtzeZRjbLt5G6fSy/7YqqYsfvoTEw9xUI2A==}
+  tailwindcss@4.1.8:
+    resolution: {integrity: sha512-kjeW8gjdxasbmFKpVGrGd5T4i40mV5J2Rasw48QARfYeQ8YS9x02ON9SFWax3Qf616rt4Cp3nVNIj6Hd1mP3og==}
 
   tar-fs@2.1.2:
     resolution: {integrity: sha512-EsaAXwxmx8UB7FRKqeozqEPop69DXcmYwTQwXvyAPF352HJsPdkVhvTaDPYqfNgruveJIJy3TA2l+2zj8LJIJA==}
@@ -5031,8 +5087,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  tsup@8.4.0:
-    resolution: {integrity: sha512-b+eZbPCjz10fRryaAA7C8xlIHnf8VnsaRqydheLIqwG/Mcpfk8Z5zp3HayX7GaTygkigHl5cBUs+IhcySiIexQ==}
+  tsup@8.5.0:
+    resolution: {integrity: sha512-VmBp77lWNQq6PfuMqCHD3xWl22vEoWsKajkF8t+yMBawlUS8JzEI+vOVMeuNZIuMML8qXRizFKi9oD5glKQVcQ==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -5099,8 +5155,8 @@ packages:
   u2f-api@0.2.7:
     resolution: {integrity: sha512-fqLNg8vpvLOD5J/z4B6wpPg4Lvowz1nJ9xdHcCzdUPKcFE/qNCceV2gNZxSJd5vhAZemHr/K/hbzVA0zxB5mkg==}
 
-  ufo@1.5.4:
-    resolution: {integrity: sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==}
+  ufo@1.6.1:
+    resolution: {integrity: sha512-9a4/uxlTWJ4+a5i0ooc1rU7C7YOw3wT+UGqdeNNHWnOF9qcMBgLRS+4IYUqbczewFx4mLEig6gawh7X6mFlEkA==}
 
   uint8arrays@2.1.10:
     resolution: {integrity: sha512-Q9/hhJa2836nQfEJSZTmr+pg9+cDJS9XEAp7N2Vg5MzL3bK/mkMVfjscRGYruP9jNda6MAdf4QD/y78gSzkp6A==}
@@ -5336,8 +5392,8 @@ packages:
       typescript:
         optional: true
 
-  vite@5.4.18:
-    resolution: {integrity: sha512-1oDcnEp3lVyHCuQ2YFelM4Alm2o91xNoMncRm1U7S+JdYfYOvbiGZ3/CxGttrOu2M/KcGz7cRC2DoNUA6urmMA==}
+  vite@5.4.19:
+    resolution: {integrity: sha512-qO3aKv3HoQC8QKiNSTuUM1l9o/XX3+c+VTgLHbJWHZGeTPVAg2XwazI9UWzoxjIJCGCV2zU60uqMzjeLZuULqA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -5900,7 +5956,7 @@ snapshots:
 
   '@emotion/memoize@0.9.0': {}
 
-  '@emotion/react@11.11.4(@types/react@18.3.18)(react@18.3.1)':
+  '@emotion/react@11.11.4(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@emotion/babel-plugin': 11.13.5
@@ -5912,7 +5968,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
     transitivePeerDependencies:
       - supports-color
 
@@ -5926,18 +5982,18 @@ snapshots:
 
   '@emotion/sheet@1.4.0': {}
 
-  '@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.3.18)(react@18.3.1))(@types/react@18.3.18)(react@18.3.1)':
+  '@emotion/styled@11.11.0(@emotion/react@11.11.4(@types/react@18.3.23)(react@18.3.1))(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@emotion/babel-plugin': 11.13.5
       '@emotion/is-prop-valid': 1.3.1
-      '@emotion/react': 11.11.4(@types/react@18.3.18)(react@18.3.1)
+      '@emotion/react': 11.11.4(@types/react@18.3.23)(react@18.3.1)
       '@emotion/serialize': 1.3.3
       '@emotion/use-insertion-effect-with-fallbacks': 1.2.0(react@18.3.1)
       '@emotion/utils': 1.4.2
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
     transitivePeerDependencies:
       - supports-color
 
@@ -6097,9 +6153,14 @@ snapshots:
   '@esbuild/win32-x64@0.25.2':
     optional: true
 
-  '@eslint-community/eslint-utils@4.6.1(eslint@9.25.0(jiti@1.21.7))':
+  '@eslint-community/eslint-utils@4.6.1(eslint@9.28.0(jiti@1.21.7))':
     dependencies:
-      eslint: 9.25.0(jiti@1.21.7)
+      eslint: 9.28.0(jiti@1.21.7)
+      eslint-visitor-keys: 3.4.3
+
+  '@eslint-community/eslint-utils@4.7.0(eslint@9.28.0(jiti@1.21.7))':
+    dependencies:
+      eslint: 9.28.0(jiti@1.21.7)
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.1': {}
@@ -6114,7 +6175,7 @@ snapshots:
 
   '@eslint/config-helpers@0.2.1': {}
 
-  '@eslint/core@0.13.0':
+  '@eslint/core@0.14.0':
     dependencies:
       '@types/json-schema': 7.0.15
 
@@ -6132,13 +6193,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/js@9.25.0': {}
+  '@eslint/js@9.28.0': {}
 
   '@eslint/object-schema@2.1.6': {}
 
-  '@eslint/plugin-kit@0.2.8':
+  '@eslint/plugin-kit@0.3.1':
     dependencies:
-      '@eslint/core': 0.13.0
+      '@eslint/core': 0.14.0
       levn: 0.4.1
 
   '@eth-optimism/contracts@0.6.0(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
@@ -6547,12 +6608,12 @@ snapshots:
       '@types/bn.js': 4.11.6
       bn.js: 4.12.1
 
-  '@headlessui/react@2.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@headlessui/react@2.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@floating-ui/react': 0.26.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/focus': 3.20.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/interactions': 3.25.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@tanstack/react-virtual': 3.13.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tanstack/react-virtual': 3.13.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       use-sync-external-store: 1.5.0(react@18.3.1)
@@ -6601,21 +6662,21 @@ snapshots:
       '@ledgerhq/errors': 5.50.0
       '@ledgerhq/logs': 5.50.0
       rxjs: 6.6.7
-      semver: 7.7.1
+      semver: 7.7.2
 
   '@ledgerhq/devices@6.27.1':
     dependencies:
       '@ledgerhq/errors': 6.19.1
       '@ledgerhq/logs': 6.12.0
       rxjs: 6.6.7
-      semver: 7.7.1
+      semver: 7.7.2
 
   '@ledgerhq/devices@8.4.4':
     dependencies:
       '@ledgerhq/errors': 6.19.1
       '@ledgerhq/logs': 6.12.0
       rxjs: 7.8.2
-      semver: 7.7.1
+      semver: 7.7.2
 
   '@ledgerhq/errors@5.50.0': {}
 
@@ -6689,7 +6750,7 @@ snapshots:
       '@metaplex-foundation/beet': 0.6.1
       '@solana/web3.js': 1.56.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       bs58: 5.0.0
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -6701,7 +6762,7 @@ snapshots:
       '@metaplex-foundation/beet': 0.7.2
       '@solana/web3.js': 1.98.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       bs58: 5.0.0
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -6712,7 +6773,7 @@ snapshots:
     dependencies:
       ansicolors: 0.3.2
       bn.js: 5.2.1
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - supports-color
 
@@ -6721,7 +6782,7 @@ snapshots:
       ansicolors: 0.3.2
       assert: 2.1.0
       bn.js: 5.2.1
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - supports-color
 
@@ -6749,7 +6810,7 @@ snapshots:
       '@solana/spl-token': 0.3.6(@solana/web3.js@1.98.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@solana/web3.js': 1.98.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       bn.js: 5.2.1
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -6958,232 +7019,232 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.27.0
 
-  '@radix-ui/react-arrow@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@radix-ui/react-arrow@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
-      '@types/react-dom': 18.3.5(@types/react@18.3.18)
+      '@types/react': 18.3.23
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
 
-  '@radix-ui/react-compose-refs@1.0.1(@types/react@18.3.18)(react@18.3.1)':
+  '@radix-ui/react-compose-refs@1.0.1(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-context@1.0.1(@types/react@18.3.18)(react@18.3.1)':
+  '@radix-ui/react-context@1.0.1(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-dialog@1.0.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@radix-ui/react-dialog@1.0.5(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-dismissable-layer': 1.0.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-focus-guards': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-focus-scope': 1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-id': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-portal': 1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-presence': 1.0.1(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.18)(react@18.3.1)
+      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-context': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-dismissable-layer': 1.0.5(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-focus-guards': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-focus-scope': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-id': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-portal': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-presence': 1.0.1(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.23)(react@18.3.1)
       aria-hidden: 1.2.4
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      react-remove-scroll: 2.5.5(@types/react@18.3.18)(react@18.3.1)
+      react-remove-scroll: 2.5.5(@types/react@18.3.23)(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
-      '@types/react-dom': 18.3.5(@types/react@18.3.18)
+      '@types/react': 18.3.23
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
 
-  '@radix-ui/react-dismissable-layer@1.0.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@radix-ui/react-dismissable-layer@1.0.5(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-use-escape-keydown': 1.0.3(@types/react@18.3.18)(react@18.3.1)
+      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-use-escape-keydown': 1.0.3(@types/react@18.3.23)(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
-      '@types/react-dom': 18.3.5(@types/react@18.3.18)
+      '@types/react': 18.3.23
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
 
-  '@radix-ui/react-focus-guards@1.0.1(@types/react@18.3.18)(react@18.3.1)':
+  '@radix-ui/react-focus-guards@1.0.1(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-focus-scope@1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@radix-ui/react-focus-scope@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.18)(react@18.3.1)
+      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.23)(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
-      '@types/react-dom': 18.3.5(@types/react@18.3.18)
+      '@types/react': 18.3.23
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
 
   '@radix-ui/react-icons@1.3.0(react@18.3.1)':
     dependencies:
       react: 18.3.1
 
-  '@radix-ui/react-id@1.0.1(@types/react@18.3.18)(react@18.3.1)':
+  '@radix-ui/react-id@1.0.1(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
-      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.18)(react@18.3.1)
+      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.23)(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-popper@1.1.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@radix-ui/react-popper@1.1.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@floating-ui/react-dom': 2.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-arrow': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-use-rect': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-use-size': 1.0.1(@types/react@18.3.18)(react@18.3.1)
+      '@radix-ui/react-arrow': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-context': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-use-rect': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-use-size': 1.0.1(@types/react@18.3.23)(react@18.3.1)
       '@radix-ui/rect': 1.0.1
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
-      '@types/react-dom': 18.3.5(@types/react@18.3.18)
+      '@types/react': 18.3.23
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
 
-  '@radix-ui/react-portal@1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@radix-ui/react-portal@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
-      '@types/react-dom': 18.3.5(@types/react@18.3.18)
+      '@types/react': 18.3.23
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
 
-  '@radix-ui/react-presence@1.0.1(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@radix-ui/react-presence@1.0.1(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.18)(react@18.3.1)
+      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.23)(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
-      '@types/react-dom': 18.3.5(@types/react@18.3.18)
+      '@types/react': 18.3.23
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
 
-  '@radix-ui/react-primitive@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@radix-ui/react-primitive@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.18)(react@18.3.1)
+      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.23)(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
-      '@types/react-dom': 18.3.5(@types/react@18.3.18)
+      '@types/react': 18.3.23
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
 
-  '@radix-ui/react-slot@1.0.2(@types/react@18.3.18)(react@18.3.1)':
+  '@radix-ui/react-slot@1.0.2(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
+      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.23)(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-tooltip@1.0.7(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@radix-ui/react-tooltip@1.0.7(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-dismissable-layer': 1.0.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-id': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-popper': 1.1.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-portal': 1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-presence': 1.0.1(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.18)(react@18.3.1)
-      '@radix-ui/react-visually-hidden': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-context': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-dismissable-layer': 1.0.5(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-id': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-popper': 1.1.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-portal': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-presence': 1.0.1(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@radix-ui/react-visually-hidden': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
-      '@types/react-dom': 18.3.5(@types/react@18.3.18)
+      '@types/react': 18.3.23
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
 
-  '@radix-ui/react-use-callback-ref@1.0.1(@types/react@18.3.18)(react@18.3.1)':
+  '@radix-ui/react-use-callback-ref@1.0.1(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-use-controllable-state@1.0.1(@types/react@18.3.18)(react@18.3.1)':
+  '@radix-ui/react-use-controllable-state@1.0.1(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.18)(react@18.3.1)
+      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.23)(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-use-escape-keydown@1.0.3(@types/react@18.3.18)(react@18.3.1)':
+  '@radix-ui/react-use-escape-keydown@1.0.3(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.18)(react@18.3.1)
+      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.23)(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-use-layout-effect@1.0.1(@types/react@18.3.18)(react@18.3.1)':
+  '@radix-ui/react-use-layout-effect@1.0.1(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-use-rect@1.0.1(@types/react@18.3.18)(react@18.3.1)':
+  '@radix-ui/react-use-rect@1.0.1(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@radix-ui/rect': 1.0.1
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-use-size@1.0.1(@types/react@18.3.18)(react@18.3.1)':
+  '@radix-ui/react-use-size@1.0.1(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
-      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.18)(react@18.3.1)
+      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.23)(react@18.3.1)
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-visually-hidden@1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@radix-ui/react-visually-hidden@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.27.0
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
-      '@types/react-dom': 18.3.5(@types/react@18.3.18)
+      '@types/react': 18.3.23
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
 
   '@radix-ui/rect@1.0.1':
     dependencies:
@@ -7237,6 +7298,8 @@ snapshots:
   '@react-types/shared@3.29.0(react@18.3.1)':
     dependencies:
       react: 18.3.1
+
+  '@rolldown/pluginutils@1.0.0-beta.9': {}
 
   '@rollup/rollup-android-arm-eabi@4.40.0':
     optional: true
@@ -7509,21 +7572,21 @@ snapshots:
       '@tanstack/query-core': 5.29.0
       react: 18.3.1
 
-  '@tanstack/react-virtual@3.13.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@tanstack/react-virtual@3.13.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@tanstack/virtual-core': 3.13.6
+      '@tanstack/virtual-core': 3.13.9
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@tanstack/virtual-core@3.13.6': {}
+  '@tanstack/virtual-core@3.13.9': {}
 
-  '@tatumio/algo@2.2.96':
+  '@tatumio/algo@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       algosdk: 1.24.1
       axios: 0.26.1
       base32.js: 0.1.0
@@ -7536,7 +7599,7 @@ snapshots:
       - debug
       - encoding
 
-  '@tatumio/api-client@2.2.96':
+  '@tatumio/api-client@2.2.98':
     dependencies:
       axios: 0.26.1
       form-data: 4.0.2
@@ -7544,22 +7607,22 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@tatumio/bch@2.2.96':
+  '@tatumio/bch@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
+      '@tatumio/api-client': 2.2.98
       '@tatumio/bitcoincashjs2-lib': 4.1.2
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-btc-based': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-btc-based': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bchaddrjs: 0.5.2
       bignumber.js: 9.3.0
       bip32: 2.0.6
       bip39: 3.1.0
       bitcoinjs-lib: 5.2.0
-      bitcore-lib: 10.0.2
+      bitcore-lib: 10.8.0
       cashaddrjs: 0.4.4
       coininfo: 5.2.1
       form-data: 4.0.2
@@ -7589,15 +7652,15 @@ snapshots:
       varuint-bitcoin: 1.1.2
       wif: 2.0.6
 
-  '@tatumio/bsc@2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@tatumio/bsc@2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
-      '@tatumio/shared-testing-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
+      '@tatumio/shared-testing-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip39: 3.1.0
@@ -7615,21 +7678,21 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tatumio/btc@2.2.96':
+  '@tatumio/btc@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-btc-based': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-btc-based': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-btc-based': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-btc-based': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip32: 2.0.6
       bip39: 3.1.0
       bitcoinjs-lib: 5.2.0
-      bitcore-lib: 10.0.2
+      bitcore-lib: 10.8.0
       form-data: 4.0.2
       hdkey: 2.1.0
       lodash: 4.17.21
@@ -7637,16 +7700,16 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@tatumio/celo@2.2.96(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
+  '@tatumio/celo@2.2.98(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
     dependencies:
       '@celo-tools/celo-ethers-wrapper': 0.1.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
-      '@tatumio/shared-testing-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
+      '@tatumio/shared-testing-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip39: 3.1.0
@@ -7665,21 +7728,21 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tatumio/doge@2.2.96':
+  '@tatumio/doge@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-btc-based': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-btc-based': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-btc-based': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-btc-based': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip32: 2.0.6
       bip39: 3.1.0
       bitcoinjs-lib: 5.2.0
-      bitcore-lib: 10.0.2
+      bitcore-lib: 10.8.0
       bitcore-lib-doge: 10.0.0
       form-data: 4.0.2
       hdkey: 2.1.0
@@ -7688,14 +7751,14 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@tatumio/egld@2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@tatumio/egld@2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
       '@elrondnetwork/erdjs': 9.2.6(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip39: 3.1.0
@@ -7711,15 +7774,15 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tatumio/eth@2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@tatumio/eth@2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
-      '@tatumio/shared-testing-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
+      '@tatumio/shared-testing-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip39: 3.1.0
@@ -7737,15 +7800,15 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tatumio/kcs@2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@tatumio/kcs@2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
-      '@tatumio/shared-testing-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
+      '@tatumio/shared-testing-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip39: 3.1.0
@@ -7763,21 +7826,21 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tatumio/ltc@2.2.96':
+  '@tatumio/ltc@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-btc-based': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-btc-based': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-btc-based': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-btc-based': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip32: 2.0.6
       bip39: 3.1.0
       bitcoinjs-lib: 5.2.0
-      bitcore-lib: 10.0.2
+      bitcore-lib: 10.8.0
       bitcore-lib-ltc: 10.0.0
       form-data: 4.0.2
       hdkey: 2.1.0
@@ -7786,16 +7849,16 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@tatumio/one@2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@tatumio/one@2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
       '@harmony-js/crypto': 0.1.58
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
-      '@tatumio/shared-testing-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
+      '@tatumio/shared-testing-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip39: 3.1.0
@@ -7813,15 +7876,15 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tatumio/polygon@2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@tatumio/polygon@2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
-      '@tatumio/shared-testing-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
+      '@tatumio/shared-testing-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip39: 3.1.0
@@ -7843,7 +7906,7 @@ snapshots:
     dependencies:
       '@tatumio/bitcoincash-ops': 2.0.0
 
-  '@tatumio/sdk@2.2.96(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
+  '@tatumio/sdk@2.2.98(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)':
     dependencies:
       '@celo-tools/celo-ethers-wrapper': 0.1.1(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))
       '@elrondnetwork/erdjs': 9.2.6(bufferutil@4.0.9)(utf-8-validate@5.0.10)
@@ -7852,32 +7915,32 @@ snapshots:
       '@metaplex-foundation/mpl-token-metadata': 2.13.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@solana/spl-token': 0.3.6(@solana/web3.js@1.56.2(bufferutil@4.0.9)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@solana/web3.js': 1.56.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/algo': 2.2.96
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/bch': 2.2.96
+      '@tatumio/algo': 2.2.98
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/bch': 2.2.98
       '@tatumio/bitcoincashjs2-lib': 4.1.2
-      '@tatumio/bsc': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/btc': 2.2.96
-      '@tatumio/celo': 2.2.96(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
-      '@tatumio/doge': 2.2.96
-      '@tatumio/egld': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/eth': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/kcs': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/ltc': 2.2.96
-      '@tatumio/one': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/polygon': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-btc-based': 2.2.96
-      '@tatumio/shared-blockchain-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-btc-based': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
-      '@tatumio/shared-testing-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/shared-testing-xrp-based': 2.2.96
-      '@tatumio/solana': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/tron': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/xrp': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/bsc': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/btc': 2.2.98
+      '@tatumio/celo': 2.2.98(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
+      '@tatumio/doge': 2.2.98
+      '@tatumio/egld': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/eth': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/kcs': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/ltc': 2.2.98
+      '@tatumio/one': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/polygon': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-btc-based': 2.2.98
+      '@tatumio/shared-blockchain-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-btc-based': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
+      '@tatumio/shared-testing-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/shared-testing-xrp-based': 2.2.98
+      '@tatumio/solana': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/tron': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/xrp': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       algosdk: 1.24.1
       axios: 0.26.1
       base-58: 0.0.1
@@ -7887,7 +7950,7 @@ snapshots:
       bip32: 2.0.6
       bip39: 3.1.0
       bitcoinjs-lib: 5.2.0
-      bitcore-lib: 10.0.2
+      bitcore-lib: 10.8.0
       bitcore-lib-doge: 10.0.0
       bitcore-lib-ltc: 10.0.0
       bn.js: 5.2.1
@@ -7913,11 +7976,11 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tatumio/shared-abstract-sdk@2.2.96':
+  '@tatumio/shared-abstract-sdk@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       form-data: 4.0.2
@@ -7926,12 +7989,12 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@tatumio/shared-blockchain-abstract@2.2.96':
+  '@tatumio/shared-blockchain-abstract@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       form-data: 4.0.2
@@ -7940,19 +8003,19 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@tatumio/shared-blockchain-btc-based@2.2.96':
+  '@tatumio/shared-blockchain-btc-based@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip32: 2.0.6
       bip39: 3.1.0
       bitcoinjs-lib: 5.2.0
-      bitcore-lib: 10.0.2
+      bitcore-lib: 10.8.0
       form-data: 4.0.2
       hdkey: 2.1.0
       lodash: 4.17.21
@@ -7960,13 +8023,13 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@tatumio/shared-blockchain-evm-based@2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@tatumio/shared-blockchain-evm-based@2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip39: 3.1.0
@@ -7984,29 +8047,29 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tatumio/shared-core@2.2.96':
+  '@tatumio/shared-core@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
+      '@tatumio/api-client': 2.2.98
       axios: 0.26.1
       form-data: 4.0.2
       tslib: 2.8.1
     transitivePeerDependencies:
       - debug
 
-  '@tatumio/shared-testing-btc-based@2.2.96':
+  '@tatumio/shared-testing-btc-based@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-btc-based': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-btc-based': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip32: 2.0.6
       bip39: 3.1.0
       bitcoinjs-lib: 5.2.0
-      bitcore-lib: 10.0.2
+      bitcore-lib: 10.8.0
       form-data: 4.0.2
       hdkey: 2.1.0
       lodash: 4.17.21
@@ -8014,23 +8077,23 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@tatumio/shared-testing-common@2.2.96':
+  '@tatumio/shared-testing-common@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
+      '@tatumio/api-client': 2.2.98
       axios: 0.26.1
       form-data: 4.0.2
       tslib: 2.8.1
     transitivePeerDependencies:
       - debug
 
-  '@tatumio/shared-testing-evm-based@2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@tatumio/shared-testing-evm-based@2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip39: 3.1.0
@@ -8048,13 +8111,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tatumio/shared-testing-xrp-based@2.2.96':
+  '@tatumio/shared-testing-xrp-based@2.2.98':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       form-data: 4.0.2
@@ -8063,17 +8126,17 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@tatumio/solana@2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@tatumio/solana@2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
       '@metaplex-foundation/mpl-auction-house': 2.5.1(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@metaplex-foundation/mpl-token-metadata': 2.13.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@solana/spl-token': 0.3.6(@solana/web3.js@1.56.2(bufferutil@4.0.9)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@solana/web3.js': 1.56.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       base-58: 0.0.1
       bignumber.js: 9.3.0
@@ -8090,14 +8153,14 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tatumio/tron@2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@tatumio/tron@2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-blockchain-evm-based': 2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-blockchain-evm-based': 2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       bip32: 2.0.6
@@ -8117,14 +8180,14 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@tatumio/xrp@2.2.96(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
+  '@tatumio/xrp@2.2.98(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
-      '@tatumio/api-client': 2.2.96
-      '@tatumio/shared-abstract-sdk': 2.2.96
-      '@tatumio/shared-blockchain-abstract': 2.2.96
-      '@tatumio/shared-core': 2.2.96
-      '@tatumio/shared-testing-common': 2.2.96
-      '@tatumio/shared-testing-xrp-based': 2.2.96
+      '@tatumio/api-client': 2.2.98
+      '@tatumio/shared-abstract-sdk': 2.2.98
+      '@tatumio/shared-blockchain-abstract': 2.2.98
+      '@tatumio/shared-core': 2.2.98
+      '@tatumio/shared-testing-common': 2.2.98
+      '@tatumio/shared-testing-xrp-based': 2.2.98
       axios: 0.26.1
       bignumber.js: 9.3.0
       form-data: 4.0.2
@@ -8167,7 +8230,7 @@ snapshots:
       buffer-reverse: 1.0.1
       treeify: 1.1.0
 
-  '@thirdweb-dev/sdk@4.0.99(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)(utf-8-validate@5.0.10)':
+  '@thirdweb-dev/sdk@4.0.99(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@eth-optimism/sdk': 3.3.2(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(utf-8-validate@5.0.10)
       '@thirdweb-dev/chains': 0.1.120
@@ -8183,7 +8246,7 @@ snapshots:
       ethers: 6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       eventemitter3: 5.0.1
       fast-deep-equal: 3.1.3
-      thirdweb: 5.29.6(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.24.1)
+      thirdweb: 5.29.6(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.24.1)
       tiny-invariant: 1.3.3
       tweetnacl: 1.0.3
       uuid: 9.0.1
@@ -8259,7 +8322,7 @@ snapshots:
 
   '@types/bn.js@4.11.6':
     dependencies:
-      '@types/node': 22.14.1
+      '@types/node': 22.15.29
 
   '@types/bn.js@5.1.6':
     dependencies:
@@ -8267,7 +8330,7 @@ snapshots:
 
   '@types/brorand@1.0.33':
     dependencies:
-      '@types/node': 22.14.1
+      '@types/node': 22.15.29
 
   '@types/cacheable-request@6.0.3':
     dependencies:
@@ -8300,7 +8363,7 @@ snapshots:
 
   '@types/node@13.13.52': {}
 
-  '@types/node@22.14.1':
+  '@types/node@22.15.29':
     dependencies:
       undici-types: 6.21.0
 
@@ -8312,15 +8375,15 @@ snapshots:
 
   '@types/pbkdf2@3.1.2':
     dependencies:
-      '@types/node': 22.14.1
+      '@types/node': 22.15.29
 
   '@types/prop-types@15.7.14': {}
 
-  '@types/react-dom@18.3.5(@types/react@18.3.18)':
+  '@types/react-dom@18.3.7(@types/react@18.3.23)':
     dependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  '@types/react@18.3.18':
+  '@types/react@18.3.23':
     dependencies:
       '@types/prop-types': 15.7.14
       csstype: 3.1.3
@@ -8331,7 +8394,7 @@ snapshots:
 
   '@types/secp256k1@4.0.6':
     dependencies:
-      '@types/node': 22.14.1
+      '@types/node': 22.15.29
 
   '@types/trusted-types@2.0.7': {}
 
@@ -8343,83 +8406,98 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 22.14.1
+      '@types/node': 22.15.29
 
-  '@typescript-eslint/eslint-plugin@8.30.1(@typescript-eslint/parser@8.30.1(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3)':
+  '@typescript-eslint/eslint-plugin@8.33.0(@typescript-eslint/parser@8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
-      '@typescript-eslint/parser': 8.30.1(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3)
-      '@typescript-eslint/scope-manager': 8.30.1
-      '@typescript-eslint/type-utils': 8.30.1(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3)
-      '@typescript-eslint/utils': 8.30.1(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3)
-      '@typescript-eslint/visitor-keys': 8.30.1
-      eslint: 9.25.0(jiti@1.21.7)
+      '@typescript-eslint/parser': 8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)
+      '@typescript-eslint/scope-manager': 8.33.0
+      '@typescript-eslint/type-utils': 8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)
+      '@typescript-eslint/utils': 8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)
+      '@typescript-eslint/visitor-keys': 8.33.0
+      eslint: 9.28.0(jiti@1.21.7)
       graphemer: 1.4.0
-      ignore: 5.3.2
+      ignore: 7.0.5
       natural-compare: 1.4.0
       ts-api-utils: 2.1.0(typescript@5.8.3)
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.30.1(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3)':
+  '@typescript-eslint/parser@8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)':
     dependencies:
-      '@typescript-eslint/scope-manager': 8.30.1
-      '@typescript-eslint/types': 8.30.1
-      '@typescript-eslint/typescript-estree': 8.30.1(typescript@5.8.3)
-      '@typescript-eslint/visitor-keys': 8.30.1
+      '@typescript-eslint/scope-manager': 8.33.0
+      '@typescript-eslint/types': 8.33.0
+      '@typescript-eslint/typescript-estree': 8.33.0(typescript@5.8.3)
+      '@typescript-eslint/visitor-keys': 8.33.0
       debug: 4.4.0
-      eslint: 9.25.0(jiti@1.21.7)
+      eslint: 9.28.0(jiti@1.21.7)
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/scope-manager@8.30.1':
+  '@typescript-eslint/project-service@8.33.0(typescript@5.8.3)':
     dependencies:
-      '@typescript-eslint/types': 8.30.1
-      '@typescript-eslint/visitor-keys': 8.30.1
-
-  '@typescript-eslint/type-utils@8.30.1(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3)':
-    dependencies:
-      '@typescript-eslint/typescript-estree': 8.30.1(typescript@5.8.3)
-      '@typescript-eslint/utils': 8.30.1(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3)
+      '@typescript-eslint/tsconfig-utils': 8.33.0(typescript@5.8.3)
+      '@typescript-eslint/types': 8.33.0
       debug: 4.4.0
-      eslint: 9.25.0(jiti@1.21.7)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+
+  '@typescript-eslint/scope-manager@8.33.0':
+    dependencies:
+      '@typescript-eslint/types': 8.33.0
+      '@typescript-eslint/visitor-keys': 8.33.0
+
+  '@typescript-eslint/tsconfig-utils@8.33.0(typescript@5.8.3)':
+    dependencies:
+      typescript: 5.8.3
+
+  '@typescript-eslint/type-utils@8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)':
+    dependencies:
+      '@typescript-eslint/typescript-estree': 8.33.0(typescript@5.8.3)
+      '@typescript-eslint/utils': 8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)
+      debug: 4.4.1
+      eslint: 9.28.0(jiti@1.21.7)
       ts-api-utils: 2.1.0(typescript@5.8.3)
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/types@8.30.1': {}
+  '@typescript-eslint/types@8.33.0': {}
 
-  '@typescript-eslint/typescript-estree@8.30.1(typescript@5.8.3)':
+  '@typescript-eslint/typescript-estree@8.33.0(typescript@5.8.3)':
     dependencies:
-      '@typescript-eslint/types': 8.30.1
-      '@typescript-eslint/visitor-keys': 8.30.1
+      '@typescript-eslint/project-service': 8.33.0(typescript@5.8.3)
+      '@typescript-eslint/tsconfig-utils': 8.33.0(typescript@5.8.3)
+      '@typescript-eslint/types': 8.33.0
+      '@typescript-eslint/visitor-keys': 8.33.0
       debug: 4.4.0
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.7.1
+      semver: 7.7.2
       ts-api-utils: 2.1.0(typescript@5.8.3)
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.30.1(eslint@9.25.0(jiti@1.21.7))(typescript@5.8.3)':
+  '@typescript-eslint/utils@8.33.0(eslint@9.28.0(jiti@1.21.7))(typescript@5.8.3)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.6.1(eslint@9.25.0(jiti@1.21.7))
-      '@typescript-eslint/scope-manager': 8.30.1
-      '@typescript-eslint/types': 8.30.1
-      '@typescript-eslint/typescript-estree': 8.30.1(typescript@5.8.3)
-      eslint: 9.25.0(jiti@1.21.7)
+      '@eslint-community/eslint-utils': 4.7.0(eslint@9.28.0(jiti@1.21.7))
+      '@typescript-eslint/scope-manager': 8.33.0
+      '@typescript-eslint/types': 8.33.0
+      '@typescript-eslint/typescript-estree': 8.33.0(typescript@5.8.3)
+      eslint: 9.28.0(jiti@1.21.7)
       typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/visitor-keys@8.30.1':
+  '@typescript-eslint/visitor-keys@8.33.0':
     dependencies:
-      '@typescript-eslint/types': 8.30.1
+      '@typescript-eslint/types': 8.33.0
       eslint-visitor-keys: 4.2.0
 
   '@use-gesture/core@10.3.1': {}
@@ -8429,14 +8507,15 @@ snapshots:
       '@use-gesture/core': 10.3.1
       react: 18.3.1
 
-  '@vitejs/plugin-react@4.4.1(vite@5.4.18(@types/node@22.14.1))':
+  '@vitejs/plugin-react@4.5.0(vite@5.4.19(@types/node@22.15.29))':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.10)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.10)
+      '@rolldown/pluginutils': 1.0.0-beta.9
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 5.4.18(@types/node@22.14.1)
+      vite: 5.4.19(@types/node@22.15.29)
     transitivePeerDependencies:
       - supports-color
 
@@ -8569,13 +8648,13 @@ snapshots:
     dependencies:
       tslib: 1.14.1
 
-  '@walletconnect/ethereum-provider@2.12.2(@types/react@18.3.18)(bufferutil@4.0.9)(react@18.3.1)(utf-8-validate@5.0.10)':
+  '@walletconnect/ethereum-provider@2.12.2(@types/react@18.3.23)(bufferutil@4.0.9)(react@18.3.1)(utf-8-validate@5.0.10)':
     dependencies:
       '@walletconnect/jsonrpc-http-connection': 1.0.8
       '@walletconnect/jsonrpc-provider': 1.0.14
       '@walletconnect/jsonrpc-types': 1.0.4
       '@walletconnect/jsonrpc-utils': 1.0.8
-      '@walletconnect/modal': 2.7.0(@types/react@18.3.18)(react@18.3.1)
+      '@walletconnect/modal': 2.7.0(@types/react@18.3.23)(react@18.3.1)
       '@walletconnect/sign-client': 2.12.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       '@walletconnect/types': 2.12.2
       '@walletconnect/universal-provider': 2.12.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)
@@ -8715,16 +8794,16 @@ snapshots:
       '@walletconnect/safe-json': 1.0.2
       pino: 7.11.0
 
-  '@walletconnect/modal-core@2.7.0(@types/react@18.3.18)(react@18.3.1)':
+  '@walletconnect/modal-core@2.7.0(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
-      valtio: 1.11.2(@types/react@18.3.18)(react@18.3.1)
+      valtio: 1.11.2(@types/react@18.3.23)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - react
 
-  '@walletconnect/modal-ui@2.7.0(@types/react@18.3.18)(react@18.3.1)':
+  '@walletconnect/modal-ui@2.7.0(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
-      '@walletconnect/modal-core': 2.7.0(@types/react@18.3.18)(react@18.3.1)
+      '@walletconnect/modal-core': 2.7.0(@types/react@18.3.23)(react@18.3.1)
       lit: 2.8.0
       motion: 10.16.2
       qrcode: 1.5.3
@@ -8732,10 +8811,10 @@ snapshots:
       - '@types/react'
       - react
 
-  '@walletconnect/modal@2.7.0(@types/react@18.3.18)(react@18.3.1)':
+  '@walletconnect/modal@2.7.0(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
-      '@walletconnect/modal-core': 2.7.0(@types/react@18.3.18)(react@18.3.1)
-      '@walletconnect/modal-ui': 2.7.0(@types/react@18.3.18)(react@18.3.1)
+      '@walletconnect/modal-core': 2.7.0(@types/react@18.3.23)(react@18.3.1)
+      '@walletconnect/modal-ui': 2.7.0(@types/react@18.3.23)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - react
@@ -9083,7 +9162,7 @@ snapshots:
 
   agent-base@6.0.2:
     dependencies:
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - supports-color
 
@@ -9164,7 +9243,7 @@ snapshots:
 
   asn1.js@4.10.1:
     dependencies:
-      bn.js: 4.12.1
+      bn.js: 4.12.2
       inherits: 2.0.4
       minimalistic-assert: 1.0.1
 
@@ -9197,14 +9276,14 @@ snapshots:
 
   atomic-sleep@1.0.0: {}
 
-  autoprefixer@10.4.21(postcss@8.5.3):
+  autoprefixer@10.4.21(postcss@8.5.4):
     dependencies:
       browserslist: 4.24.4
       caniuse-lite: 1.0.30001715
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.1
-      postcss: 8.5.3
+      postcss: 8.5.4
       postcss-value-parser: 4.2.0
 
   available-typed-arrays@1.0.7:
@@ -9294,14 +9373,6 @@ snapshots:
     dependencies:
       file-uri-to-path: 1.0.0
 
-  bip-schnorr@0.6.4:
-    dependencies:
-      bigi: 1.4.2
-      ecurve: 1.0.6
-      js-sha256: 0.9.0
-      randombytes: 2.1.0
-      safe-buffer: 5.2.1
-
   bip174@2.1.1: {}
 
   bip32-path@0.4.2: {}
@@ -9380,10 +9451,9 @@ snapshots:
       lodash: 4.17.21
       scryptsy: 2.1.0
 
-  bitcore-lib@10.0.2:
+  bitcore-lib@10.8.0:
     dependencies:
       bech32: 2.0.0
-      bip-schnorr: 0.6.4
       bn.js: 4.11.8
       bs58: 4.0.1
       buffer-compare: 1.1.1
@@ -9415,6 +9485,8 @@ snapshots:
   bn.js@4.11.8: {}
 
   bn.js@4.12.1: {}
+
+  bn.js@4.12.2: {}
 
   bn.js@5.2.1: {}
 
@@ -9740,6 +9812,8 @@ snapshots:
 
   concat-map@0.0.1: {}
 
+  confbox@0.1.8: {}
+
   consola@3.4.2: {}
 
   console-browserify@1.2.0: {}
@@ -9791,7 +9865,7 @@ snapshots:
 
   create-ecdh@4.0.4:
     dependencies:
-      bn.js: 4.12.1
+      bn.js: 4.12.2
       elliptic: 6.6.1
 
   create-hash@1.2.0:
@@ -9875,6 +9949,10 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
+  debug@4.4.1:
+    dependencies:
+      ms: 2.1.3
+
   decamelize@1.2.0: {}
 
   decimal.js@10.5.0: {}
@@ -9946,7 +10024,7 @@ snapshots:
 
   diffie-hellman@5.0.3:
     dependencies:
-      bn.js: 4.12.1
+      bn.js: 4.12.2
       miller-rabin: 4.0.1
       randombytes: 2.1.0
 
@@ -10004,7 +10082,7 @@ snapshots:
 
   elliptic@6.6.1:
     dependencies:
-      bn.js: 4.12.1
+      bn.js: 4.12.2
       brorand: 1.1.0
       hash.js: 1.1.7
       hmac-drbg: 1.0.1
@@ -10149,13 +10227,13 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-plugin-react-hooks@5.2.0(eslint@9.25.0(jiti@1.21.7)):
+  eslint-plugin-react-hooks@5.2.0(eslint@9.28.0(jiti@1.21.7)):
     dependencies:
-      eslint: 9.25.0(jiti@1.21.7)
+      eslint: 9.28.0(jiti@1.21.7)
 
-  eslint-plugin-react-refresh@0.4.19(eslint@9.25.0(jiti@1.21.7)):
+  eslint-plugin-react-refresh@0.4.20(eslint@9.28.0(jiti@1.21.7)):
     dependencies:
-      eslint: 9.25.0(jiti@1.21.7)
+      eslint: 9.28.0(jiti@1.21.7)
 
   eslint-scope@8.3.0:
     dependencies:
@@ -10166,16 +10244,16 @@ snapshots:
 
   eslint-visitor-keys@4.2.0: {}
 
-  eslint@9.25.0(jiti@1.21.7):
+  eslint@9.28.0(jiti@1.21.7):
     dependencies:
-      '@eslint-community/eslint-utils': 4.6.1(eslint@9.25.0(jiti@1.21.7))
+      '@eslint-community/eslint-utils': 4.6.1(eslint@9.28.0(jiti@1.21.7))
       '@eslint-community/regexpp': 4.12.1
       '@eslint/config-array': 0.20.0
       '@eslint/config-helpers': 0.2.1
-      '@eslint/core': 0.13.0
+      '@eslint/core': 0.14.0
       '@eslint/eslintrc': 3.3.1
-      '@eslint/js': 9.25.0
-      '@eslint/plugin-kit': 0.2.8
+      '@eslint/js': 9.28.0
+      '@eslint/plugin-kit': 0.3.1
       '@humanfs/node': 0.16.6
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.4.2
@@ -10242,7 +10320,7 @@ snapshots:
 
   eth-lib@0.1.29(bufferutil@4.0.9)(utf-8-validate@5.0.10):
     dependencies:
-      bn.js: 4.12.1
+      bn.js: 4.12.2
       elliptic: 6.6.1
       nano-json-stream-parser: 0.1.2
       servify: 0.1.12
@@ -10255,7 +10333,7 @@ snapshots:
 
   eth-lib@0.2.8:
     dependencies:
-      bn.js: 4.12.1
+      bn.js: 4.12.2
       elliptic: 6.6.1
       xhr-request-promise: 0.1.3
 
@@ -10463,6 +10541,12 @@ snapshots:
       locate-path: 6.0.0
       path-exists: 4.0.0
 
+  fix-dts-default-cjs-exports@1.0.1:
+    dependencies:
+      magic-string: 0.30.17
+      mlly: 1.7.4
+      rollup: 4.40.0
+
   flat-cache@4.0.1:
     dependencies:
       flatted: 3.3.3
@@ -10491,7 +10575,7 @@ snapshots:
       node-stream-zip: 1.15.0
       prettier: 1.19.1
       rimraf: 3.0.2
-      semver: 7.7.1
+      semver: 7.7.2
       table: 6.9.0
       which: 2.0.2
       yargs: 15.4.1
@@ -10707,7 +10791,7 @@ snapshots:
       iron-webcrypto: 1.2.1
       ohash: 1.1.4
       radix3: 1.1.2
-      ufo: 1.5.4
+      ufo: 1.6.1
       uncrypto: 0.1.3
       unenv: 1.10.0
 
@@ -10814,7 +10898,7 @@ snapshots:
   https-proxy-agent@5.0.1:
     dependencies:
       agent-base: 6.0.2
-      debug: 4.4.0
+      debug: 4.4.1
     transitivePeerDependencies:
       - supports-color
 
@@ -10835,6 +10919,8 @@ snapshots:
   ieee754@1.2.1: {}
 
   ignore@5.3.2: {}
+
+  ignore@7.0.5: {}
 
   import-fresh@3.3.1:
     dependencies:
@@ -11138,6 +11224,10 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
+  magic-string@0.30.17:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.5.0
+
   math-intrinsics@1.1.0: {}
 
   md5.js@1.3.5:
@@ -11179,7 +11269,7 @@ snapshots:
 
   miller-rabin@4.0.1:
     dependencies:
-      bn.js: 4.12.1
+      bn.js: 4.12.2
       brorand: 1.1.0
 
   mime-db@1.52.0: {}
@@ -11244,6 +11334,13 @@ snapshots:
   mkdirp@1.0.4: {}
 
   mkdirp@3.0.1: {}
+
+  mlly@1.7.4:
+    dependencies:
+      acorn: 8.14.1
+      pathe: 2.0.3
+      pkg-types: 1.3.1
+      ufo: 1.6.1
 
   mock-fs@4.14.0: {}
 
@@ -11326,7 +11423,7 @@ snapshots:
 
   node-abi@2.30.1:
     dependencies:
-      semver: 7.7.1
+      semver: 7.7.2
 
   node-addon-api@2.0.2: {}
 
@@ -11430,7 +11527,7 @@ snapshots:
     dependencies:
       destr: 2.0.3
       node-fetch-native: 1.6.4
-      ufo: 1.5.4
+      ufo: 1.6.1
 
   ohash@1.1.4: {}
 
@@ -11526,6 +11623,8 @@ snapshots:
 
   pathe@1.1.2: {}
 
+  pathe@2.0.3: {}
+
   pathval@1.1.1: {}
 
   pbkdf2@3.1.2:
@@ -11569,23 +11668,29 @@ snapshots:
 
   pirates@4.0.7: {}
 
+  pkg-types@1.3.1:
+    dependencies:
+      confbox: 0.1.8
+      mlly: 1.7.4
+      pathe: 2.0.3
+
   platform@1.3.6: {}
 
   pngjs@5.0.0: {}
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.3)(yaml@2.7.0):
+  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.4)(yaml@2.7.0):
     dependencies:
       lilconfig: 3.1.3
     optionalDependencies:
       jiti: 1.21.7
-      postcss: 8.5.3
+      postcss: 8.5.4
       yaml: 2.7.0
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.5.3:
+  postcss@8.5.4:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -11652,7 +11757,7 @@ snapshots:
 
   public-encrypt@4.0.3:
     dependencies:
-      bn.js: 4.12.1
+      bn.js: 4.12.2
       browserify-rsa: 4.1.1
       create-hash: 1.2.0
       parse-asn1: 5.1.7
@@ -11761,32 +11866,32 @@ snapshots:
 
   react-refresh@0.17.0: {}
 
-  react-remove-scroll-bar@2.3.8(@types/react@18.3.18)(react@18.3.1):
+  react-remove-scroll-bar@2.3.8(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       react: 18.3.1
-      react-style-singleton: 2.2.3(@types/react@18.3.18)(react@18.3.1)
+      react-style-singleton: 2.2.3(@types/react@18.3.23)(react@18.3.1)
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  react-remove-scroll@2.5.5(@types/react@18.3.18)(react@18.3.1):
+  react-remove-scroll@2.5.5(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       react: 18.3.1
-      react-remove-scroll-bar: 2.3.8(@types/react@18.3.18)(react@18.3.1)
-      react-style-singleton: 2.2.3(@types/react@18.3.18)(react@18.3.1)
+      react-remove-scroll-bar: 2.3.8(@types/react@18.3.23)(react@18.3.1)
+      react-style-singleton: 2.2.3(@types/react@18.3.23)(react@18.3.1)
       tslib: 2.8.1
-      use-callback-ref: 1.3.3(@types/react@18.3.18)(react@18.3.1)
-      use-sidecar: 1.1.3(@types/react@18.3.18)(react@18.3.1)
+      use-callback-ref: 1.3.3(@types/react@18.3.23)(react@18.3.1)
+      use-sidecar: 1.1.3(@types/react@18.3.23)(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  react-style-singleton@2.2.3(@types/react@18.3.18)(react@18.3.1):
+  react-style-singleton@2.2.3(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       get-nonce: 1.0.1
       react: 18.3.1
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
   react@18.3.1:
     dependencies:
@@ -12042,6 +12147,8 @@ snapshots:
   semver@7.6.3: {}
 
   semver@7.7.1: {}
+
+  semver@7.7.2: {}
 
   send@0.19.0:
     dependencies:
@@ -12348,7 +12455,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tailwindcss@4.1.4: {}
+  tailwindcss@4.1.8: {}
 
   tar-fs@2.1.2:
     dependencies:
@@ -12385,21 +12492,21 @@ snapshots:
     dependencies:
       any-promise: 1.3.0
 
-  thirdweb@5.29.6(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.24.1):
+  thirdweb@5.29.6(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(bufferutil@4.0.9)(ethers@6.13.5(bufferutil@4.0.9)(utf-8-validate@5.0.10))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.24.1):
     dependencies:
       '@coinbase/wallet-sdk': 4.0.3
-      '@emotion/react': 11.11.4(@types/react@18.3.18)(react@18.3.1)
-      '@emotion/styled': 11.11.0(@emotion/react@11.11.4(@types/react@18.3.18)(react@18.3.1))(@types/react@18.3.18)(react@18.3.1)
+      '@emotion/react': 11.11.4(@types/react@18.3.23)(react@18.3.1)
+      '@emotion/styled': 11.11.0(@emotion/react@11.11.4(@types/react@18.3.23)(react@18.3.1))(@types/react@18.3.23)(react@18.3.1)
       '@google/model-viewer': 2.1.1
       '@noble/curves': 1.4.0
       '@noble/hashes': 1.4.0
       '@passwordless-id/webauthn': 1.6.2
-      '@radix-ui/react-dialog': 1.0.5(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@radix-ui/react-focus-scope': 1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-dialog': 1.0.5(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-focus-scope': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-icons': 1.3.0(react@18.3.1)
-      '@radix-ui/react-tooltip': 1.0.7(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-tooltip': 1.0.7(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-query': 5.29.2(react@18.3.1)
-      '@walletconnect/ethereum-provider': 2.12.2(@types/react@18.3.18)(bufferutil@4.0.9)(react@18.3.1)(utf-8-validate@5.0.10)
+      '@walletconnect/ethereum-provider': 2.12.2(@types/react@18.3.23)(bufferutil@4.0.9)(react@18.3.1)(utf-8-validate@5.0.10)
       '@walletconnect/sign-client': 2.17.3(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       abitype: 1.0.0(typescript@5.8.3)(zod@3.24.1)
       fast-text-encoding: 1.0.6
@@ -12459,7 +12566,7 @@ snapshots:
   tiny-secp256k1@1.1.7:
     dependencies:
       bindings: 1.5.0
-      bn.js: 4.12.1
+      bn.js: 4.12.2
       create-hmac: 1.1.7
       elliptic: 6.6.1
       nan: 2.22.2
@@ -12507,7 +12614,7 @@ snapshots:
       injectpromise: 1.0.0
       lodash: 4.17.21
       querystring-es3: 0.2.1
-      semver: 7.7.1
+      semver: 7.7.2
       validator: 13.15.0
     transitivePeerDependencies:
       - bufferutil
@@ -12526,7 +12633,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsup@8.4.0(jiti@1.21.7)(postcss@8.5.3)(typescript@5.8.3)(yaml@2.7.0):
+  tsup@8.5.0(jiti@1.21.7)(postcss@8.5.4)(typescript@5.8.3)(yaml@2.7.0):
     dependencies:
       bundle-require: 5.1.0(esbuild@0.25.2)
       cac: 6.7.14
@@ -12534,9 +12641,10 @@ snapshots:
       consola: 3.4.2
       debug: 4.4.0
       esbuild: 0.25.2
+      fix-dts-default-cjs-exports: 1.0.1
       joycon: 3.1.1
       picocolors: 1.1.1
-      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.3)(yaml@2.7.0)
+      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.4)(yaml@2.7.0)
       resolve-from: 5.0.0
       rollup: 4.40.0
       source-map: 0.8.0-beta.0
@@ -12545,7 +12653,7 @@ snapshots:
       tinyglobby: 0.2.13
       tree-kill: 1.2.2
     optionalDependencies:
-      postcss: 8.5.3
+      postcss: 8.5.4
       typescript: 5.8.3
     transitivePeerDependencies:
       - jiti
@@ -12590,7 +12698,7 @@ snapshots:
 
   u2f-api@0.2.7: {}
 
-  ufo@1.5.4: {}
+  ufo@1.6.1: {}
 
   uint8arrays@2.1.10:
     dependencies:
@@ -12639,7 +12747,7 @@ snapshots:
       lru-cache: 10.4.3
       node-fetch-native: 1.6.4
       ofetch: 1.4.1
-      ufo: 1.5.4
+      ufo: 1.6.1
     optionalDependencies:
       idb-keyval: 6.2.1
 
@@ -12672,20 +12780,20 @@ snapshots:
       node-addon-api: 4.3.0
       node-gyp-build: 4.8.4
 
-  use-callback-ref@1.3.3(@types/react@18.3.18)(react@18.3.1):
+  use-callback-ref@1.3.3(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       react: 18.3.1
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
-  use-sidecar@1.1.3(@types/react@18.3.18)(react@18.3.1):
+  use-sidecar@1.1.3(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       detect-node-es: 1.1.0
       react: 18.3.1
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
 
   use-sync-external-store@1.2.0(react@18.3.1):
     dependencies:
@@ -12729,12 +12837,12 @@ snapshots:
 
   validator@13.15.0: {}
 
-  valtio@1.11.2(@types/react@18.3.18)(react@18.3.1):
+  valtio@1.11.2(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       proxy-compare: 2.5.1
       use-sync-external-store: 1.2.0(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.23
       react: 18.3.1
 
   varint@5.0.2: {}
@@ -12770,13 +12878,13 @@ snapshots:
       - utf-8-validate
       - zod
 
-  vite@5.4.18(@types/node@22.14.1):
+  vite@5.4.19(@types/node@22.15.29):
     dependencies:
       esbuild: 0.21.5
-      postcss: 8.5.3
+      postcss: 8.5.4
       rollup: 4.40.0
     optionalDependencies:
-      '@types/node': 22.14.1
+      '@types/node': 22.15.29
       fsevents: 2.3.3
 
   vlq@2.0.4: {}
@@ -13034,7 +13142,7 @@ snapshots:
 
   wide-align@1.1.5:
     dependencies:
-      string-width: 4.2.3
+      string-width: 1.0.2
 
   wif@2.0.6:
     dependencies:
